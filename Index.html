@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>River Beacon Consulting — Security. Control. Peace of Mind.</title>
+<meta name="description" content="White-glove digital advisory for individuals and families. Privacy and security, digital life continuity, and intentional technology.">
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%231A2332'/%3E%3Ctext x='32' y='44' font-family='Georgia, serif' font-size='34' font-weight='700' text-anchor='middle' fill='%23C9A961'%3ERB%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  /* SMOOTH SCROLL */
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Source Sans 3', sans-serif;
+    background: #F5F5F0;
+    color: #555555;
+    line-height: 1.6;
+    font-size: 16px;
+    zoom: 1.1;
+  }
+  a { color: #2E4057; text-decoration: none; }
+  a:hover { color: #C9A961; }
+
+  /* GOLD TEXT SELECTION */
+  ::selection { background: #C9A961; color: #1A2332; }
+
+  /* FOCUS ACCESSIBILITY */
+  a:focus-visible {
+    outline: 2px solid #C9A961;
+    outline-offset: 2px;
+  }
+
+  /* NAV */
+  nav {
+    background: #1A2332;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 2px solid #C9A961;
+  }
+  .nav-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .nav-brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #FFFFFF;
+    letter-spacing: 0.5px;
+  }
+  .nav-brand span { color: #C9A961; }
+  .nav-links { display: flex; gap: 32px; }
+  .nav-links a {
+    color: #FFFFFF;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding-bottom: 4px;
+    background-image: linear-gradient(#C9A961, #C9A961);
+    background-size: 0% 2px;
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    transition: color 0.3s ease, background-size 0.3s ease;
+  }
+  .nav-links a:hover, .nav-links a.active {
+    color: #C9A961;
+    background-size: 100% 2px;
+  }
+
+  /* HERO */
+  .hero { background: #1A2332; padding: 80px 24px; text-align: center; }
+  .hero-frame-inner {
+    border: 1px solid #2E4057;
+    outline: 8px solid #1A2332;
+    padding: 64px 24px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: #FFFFFF;
+    line-height: 1.25;
+    margin-bottom: 24px;
+  }
+  .hero-tagline {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #C9A961;
+    margin-bottom: 40px;
+  }
+  .hero-cta {
+    display: inline-block;
+    background: #C9A961;
+    color: #1A2332;
+    padding: 16px 40px;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+  }
+  .hero-cta:hover { background: #FFFFFF; color: #1A2332; }
+
+  /* GOLD DIVIDER */
+  .gold-divider {
+    border: 0;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #C9A961 20%, #C9A961 80%, transparent);
+    max-width: 140px;
+    margin: 48px auto;
+  }
+
+  /* CONTENT SECTIONS */
+  .content-section { max-width: 760px; margin: 0 auto; padding: 72px 24px; }
+  .content-section p { font-size: 18px; color: #555555; margin-bottom: 24px; line-height: 1.7; }
+  .content-section .gold-divider { margin-bottom: 0; }
+
+  /* BRIDGE / CLOSING */
+  .bridge { background: #1A2332; padding: 56px 24px; text-align: center; }
+  .bridge-inner { max-width: 680px; margin: 0 auto; }
+  .bridge p {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-style: italic;
+    color: #FFFFFF;
+    line-height: 1.5;
+  }
+
+  /* PILLARS */
+  .pillars { padding: 72px 24px; max-width: 1100px; margin: 0 auto; }
+  .pillar-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+  .pillar-card {
+    background: #FFFFFF;
+    padding: 44px 32px;
+    border-radius: 6px;
+    border-top: 4px solid #C9A961;
+    box-shadow: 0 2px 10px rgba(26,35,50,0.06);
+    transition: transform 0.28s ease, box-shadow 0.28s ease;
+  }
+  .pillar-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(26,35,50,0.16);
+  }
+  .pillar-number {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #2E4057;
+    margin-bottom: 8px;
+  }
+  .pillar-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: #1A2332;
+    margin-bottom: 20px;
+  }
+  .pillar-card p {
+    font-size: 16px;
+    color: #555555;
+    margin-bottom: 12px;
+    line-height: 1.7;
+  }
+  .pillars-more {
+    text-align: center;
+    font-size: 16px;
+  }
+  .pillars-more a {
+    font-weight: 600;
+    color: #2E4057;
+    background-image: linear-gradient(#C9A961, #C9A961);
+    background-size: 0% 2px;
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    transition: background-size 0.3s ease, color 0.3s ease;
+    padding-bottom: 2px;
+  }
+  .pillars-more a:hover {
+    color: #C9A961;
+    background-size: 100% 2px;
+  }
+
+  /* CONTACT */
+  .contact { padding: 72px 24px; max-width: 700px; margin: 0 auto; text-align: center; }
+  .contact h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: #1A2332;
+    margin-bottom: 12px;
+  }
+  .contact-sub { font-size: 16px; color: #555555; margin-bottom: 48px; }
+  .contact-subheading {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #1A2332;
+    margin-bottom: 20px;
+  }
+  .consult-option {
+    display: inline-block;
+    width: 100%;
+    max-width: 480px;
+    padding: 20px 24px;
+    background: #C9A961;
+    color: #1A2332;
+    font-weight: 700;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+  }
+  .consult-option:hover { background: #1A2332; color: #C9A961; }
+  .contact-option {
+    display: block;
+    width: 100%;
+    max-width: 480px;
+    padding: 16px 24px;
+    border: 1px solid #C4C4BE;
+    color: #1A2332;
+    font-size: 15px;
+    border-radius: 4px;
+    text-align: left;
+    transition: all 0.3s ease;
+  }
+  .contact-option:hover { border-color: #1A2332; background: #FFFFFF; }
+  .contact-option strong { display: block; }
+  .contact-option span { font-size: 13px; opacity: 0.75; }
+  .contact-privacy {
+    font-size: 14px;
+    color: #555555;
+    line-height: 1.8;
+    max-width: 520px;
+    margin: 0 auto;
+    padding-top: 16px;
+    border-top: 1px solid #E0E0E0;
+  }
+  .contact-block { margin-bottom: 48px; }
+  .contact-options { display: flex; flex-direction: column; gap: 16px; align-items: center; }
+
+  /* FOOTER */
+  footer { background: #1A2332; padding: 40px 24px; text-align: center; }
+  .footer-rule {
+    height: 1px;
+    background: #C9A961;
+    opacity: 0.4;
+    max-width: 60px;
+    margin: 0 auto 20px;
+  }
+  .footer-wordmark {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 6px;
+  }
+  .footer-wordmark span { color: #C9A961; }
+  .footer-tagline {
+    font-size: 12px;
+    color: #FFFFFF;
+    opacity: 0.6;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+  }
+
+  /* MOBILE */
+  @media (max-width: 768px) {
+    .nav-links { gap: 16px; }
+    .nav-links a { font-size: 11px; }
+    .nav-brand { font-size: 18px; }
+    .hero h1 { font-size: 32px; }
+    .hero { padding: 56px 20px; }
+    .hero-frame-inner {
+      border: none;
+      outline: none;
+      padding: 0;
+      max-width: none;
+      margin: 0;
+    }
+    .pillar-grid { grid-template-columns: 1fr; }
+    .pillars { padding: 56px 20px; }
+    .content-section { padding: 56px 20px; }
+    .bridge p { font-size: 18px; }
+    .contact { padding: 56px 20px; }
+    .gold-divider { margin: 36px auto; }
+  }
+  @media (max-width: 480px) {
+    .nav-inner { flex-direction: column; }
+    .nav-links { gap: 20px; }
+    .hero h1 { font-size: 28px; }
+    .hero-cta { width: 100%; max-width: 360px; }
+    .consult-option { width: 100%; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-brand" href="index.html">River <span>Beacon</span> Consulting</a>
+    <div class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-frame-inner">
+    <h1>For those who have<br>something to protect.</h1>
+    <div class="hero-tagline">Security. Control. Peace of mind.</div>
+    <a class="hero-cta" href="https://example.com" target="_blank" rel="noopener">Book a Complimentary Consultation</a>
+  </div>
+</section>
+
+<!-- THE PITCH -->
+<section class="content-section">
+  <div class="content-body">
+    <p>We help individuals and families take control of their digital lives.</p>
+    <p>The current digital ecosystem leaves most people vulnerable by default. With our backgrounds in data analytics, technology design, cybersecurity and privacy, we know exactly how people's data gets hacked, sold and used against them. We're here to help you stop it.</p>
+    <p>We research and test custom strategies to make sure they actually work and deliver the best results for each individual situation.</p>
+  </div>
+  <hr class="gold-divider">
+</section>
+
+<!-- BRIDGE -->
+<section class="bridge">
+  <div class="bridge-inner">
+    <p>In an increasingly digital world, three things matter more than ever.</p>
+  </div>
+</section>
+
+<!-- THREE PILLARS -->
+<section class="pillars">
+  <div class="pillar-grid">
+    <div class="pillar-card">
+      <div class="pillar-number">Pillar One</div>
+      <h3>Privacy &amp; Digital Security</h3>
+      <p>Privacy is the blinds on your windows. Security is the locks on your doors. Both matter, and both work together. We help prevent hacks of your phone, online accounts, and home network. We also configure your devices to minimize exposure and keep your personal information (address, phone, vehicle details) off online directories and people-search sites. You decide what stays private and what gets shared.</p>
+    </div>
+    <div class="pillar-card">
+      <div class="pillar-number">Pillar Two</div>
+      <h3>Digital Life Continuity</h3>
+      <p>When the unexpected happens, your family needs access, not a tangled mess to unravel. We build a complete Digital Continuity Plan so your valuable assets remain retrievable if you become incapacitated. We set up secure storage for those assets and other important records. We also conduct tests to ensure your loved ones have proper access. Your attorney handles the legal layer. We handle the digital layer, where things often get stuck.</p>
+    </div>
+    <div class="pillar-card">
+      <div class="pillar-number">Pillar Three</div>
+      <h3>Intentional Technology</h3>
+      <p>Successful people optimize their finances, their careers, and their health. However, when it comes to their digital life, it is often chaotic, distracting, and quietly making them less capable. We help you build a digital life that serves your goals. That means cutting what drains you, keeping what serves you, and learning to use modern tools to sharpen your skills and judgment, not dull them. Stop reacting to your tech. Start commanding it.</p>
+    </div>
+  </div>
+  <hr class="gold-divider">
+  <div class="pillars-more">
+    <p><a href="services.html">Learn more about how we work together &rarr;</a></p>
+  </div>
+</section>
+
+<!-- CLOSING -->
+<section class="bridge">
+  <div class="bridge-inner">
+    <p>Our goal is to ensure your technology truly helps you, not hurts you.</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <h2>Contact</h2>
+  <p class="contact-sub">Reach out through whichever channel makes you most comfortable.</p>
+
+  <div class="contact-block">
+    <div class="contact-subheading">Book a Complimentary Consultation</div>
+    <div class="contact-options">
+      <a class="consult-option" href="https://example.com" target="_blank" rel="noopener">Schedule through our private calendar</a>
+    </div>
+  </div>
+
+  <div class="contact-block">
+    <div class="contact-subheading">Direct Contact</div>
+    <div class="contact-options">
+      <a class="contact-option" href="https://signal.org/download/" target="_blank" rel="noopener">
+        <strong>Signal Messenger</strong>
+        <span>Download the Signal Messenger app, then message riverbeacon.01</span>
+      </a>
+      <a class="contact-option" href="mailto:contact@riverbeacon.com">
+        <strong>Proton Mail</strong>
+        <span>Email contact@riverbeacon.com from a Proton Mail account</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="contact-subheading">Privacy</div>
+  <p class="contact-privacy">The methods above ensure your communications are encrypted from your device to ours. No intermediaries. No third-party servers reading your messages.</p>
+</section>
+
+<footer>
+  <div class="footer-rule"></div>
+  <p class="footer-wordmark">River <span>Beacon</span> Consulting</p>
+  <p class="footer-tagline">Security. Control. Peace of mind.</p>
+</footer>
+
+</body>
+</html>

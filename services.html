@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services — River Beacon Consulting</title>
+<meta name="description" content="How we work: hourly consulting, scoped engagements, and ongoing protection for individuals and families.">
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%231A2332'/%3E%3Ctext x='32' y='44' font-family='Georgia, serif' font-size='34' font-weight='700' text-anchor='middle' fill='%23C9A961'%3ERB%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  /* SMOOTH SCROLL */
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Source Sans 3', sans-serif;
+    background: #F5F5F0;
+    color: #555555;
+    line-height: 1.6;
+    font-size: 16px;
+    zoom: 1.1;
+  }
+  a { color: #2E4057; text-decoration: none; }
+  a:hover { color: #C9A961; }
+
+  /* GOLD TEXT SELECTION */
+  ::selection { background: #C9A961; color: #1A2332; }
+
+  /* FOCUS ACCESSIBILITY */
+  a:focus-visible {
+    outline: 2px solid #C9A961;
+    outline-offset: 2px;
+  }
+
+  /* NAV */
+  nav {
+    background: #1A2332;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 2px solid #C9A961;
+  }
+  .nav-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .nav-brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #FFFFFF;
+    letter-spacing: 0.5px;
+  }
+  .nav-brand span { color: #C9A961; }
+  .nav-links { display: flex; gap: 32px; }
+  .nav-links a {
+    color: #FFFFFF;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding-bottom: 4px;
+    background-image: linear-gradient(#C9A961, #C9A961);
+    background-size: 0% 2px;
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    transition: color 0.3s ease, background-size 0.3s ease;
+  }
+  .nav-links a:hover, .nav-links a.active {
+    color: #C9A961;
+    background-size: 100% 2px;
+  }
+
+  /* PAGE HERO */
+  .services-hero { background: #1A2332; padding: 72px 24px; text-align: center; }
+  .services-hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+  }
+  .services-hero p {
+    font-size: 14px;
+    color: #C9A961;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  /* SERVICE BLOCKS */
+  .services-body { max-width: 680px; margin: 0 auto; padding: 72px 24px; }
+  .services-body .intro {
+    font-size: 18px;
+    color: #555555;
+    line-height: 1.7;
+    margin-bottom: 56px;
+  }
+  .service-block { margin-bottom: 56px; }
+  .service-block:last-of-type { margin-bottom: 0; }
+  .service-lead {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #C9A961;
+    margin-bottom: 8px;
+  }
+  .service-block h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: #1A2332;
+    margin-bottom: 16px;
+  }
+  .service-block p {
+    font-size: 17px;
+    color: #555555;
+    line-height: 1.8;
+  }
+  .service-block p + p { margin-top: 12px; }
+
+  /* CTA */
+  .bridge { background: #1A2332; padding: 56px 24px; text-align: center; }
+  .bridge-inner { max-width: 680px; margin: 0 auto; }
+  .bridge p {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-style: italic;
+    color: #FFFFFF;
+    line-height: 1.5;
+    margin-bottom: 28px;
+  }
+  .hero-cta {
+    display: inline-block;
+    background: #C9A961;
+    color: #1A2332;
+    padding: 16px 40px;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+  }
+  .hero-cta:hover { background: #FFFFFF; color: #1A2332; }
+
+  /* FOOTER */
+  footer { background: #1A2332; padding: 40px 24px; text-align: center; }
+  .footer-rule {
+    height: 1px;
+    background: #C9A961;
+    opacity: 0.4;
+    max-width: 60px;
+    margin: 0 auto 20px;
+  }
+  .footer-wordmark {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 6px;
+  }
+  .footer-wordmark span { color: #C9A961; }
+  .footer-tagline {
+    font-size: 12px;
+    color: #FFFFFF;
+    opacity: 0.6;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+  }
+
+  /* MOBILE */
+  @media (max-width: 768px) {
+    .nav-links { gap: 16px; }
+    .nav-links a { font-size: 11px; }
+    .nav-brand { font-size: 18px; }
+    .services-hero { padding: 56px 20px; }
+    .services-hero h1 { font-size: 28px; }
+    .services-body { padding: 56px 20px; }
+    .services-body .intro { font-size: 17px; }
+    .service-block p { font-size: 16px; }
+    .service-block { margin-bottom: 48px; }
+    .bridge p { font-size: 18px; }
+    .bridge { padding: 48px 20px; }
+  }
+  @media (max-width: 480px) {
+    .nav-inner { flex-direction: column; }
+    .nav-links { gap: 20px; }
+    .hero-cta { width: 100%; max-width: 360px; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-brand" href="index.html">River <span>Beacon</span> Consulting</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="services.html" class="active">Services</a>
+      <a href="about.html">About</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<section class="services-hero">
+  <h1>How We Work</h1>
+  <p>White-glove advisory, your terms</p>
+</section>
+
+<section class="services-body">
+  <p class="intro">However we work together, everything is based on your situation, your family, and your goals. Regardless of what you choose, you get careful attention to detail, honest recommendations, and someone who listens before advising.</p>
+
+  <div class="service-block">
+    <div class="service-lead">For when you are not sure where to begin. Start with a conversation.</div>
+    <h2>Hourly Consulting</h2>
+    <p>A focused session on your most pressing digital security, privacy, or technology question. Advice, education, and a clear recommendation you can act on.</p>
+    <p>Clients use these sessions to make sense of a suspicious email, talk through a concern about a device, get expert eyes on a decision before committing, or simply have someone calm their nerves and walk through a situation that feels off.</p>
+  </div>
+
+  <div class="service-block">
+    <div class="service-lead">When you know the outcome you want, we handle it from start to finish.</div>
+    <h2>Scoped Engagement</h2>
+    <p>A complete engagement built around a defined result with a clear beginning and end. We assess your situation, design the plan, and implement it for you. Common examples include a full digital security overhaul, a complete Digital Continuity Plan, or an intentional technology reset.</p>
+    <p>Delivered white-glove, with a clear record of what was done and how it works, so you stay in control.</p>
+  </div>
+
+  <div class="service-block">
+    <div class="service-lead">For clients who want an ongoing advisor rather than a one-time fix.</div>
+    <h2>Ongoing Protection</h2>
+    <p>We monitor your digital exposure, keep protections current as the landscape changes, and stay available as a private channel for the questions that come up in daily life. Should you click this link? Is this email real? Is there a new risk you should know about? We help you make informed decisions without your having to become the expert.</p>
+  </div>
+</section>
+
+<section class="bridge">
+  <div class="bridge-inner">
+    <p>Ready to take control?</p>
+    <a class="hero-cta" href="https://example.com" target="_blank" rel="noopener">Book a Complimentary Consultation</a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-rule"></div>
+  <p class="footer-wordmark">River <span>Beacon</span> Consulting</p>
+  <p class="footer-tagline">Security. Control. Peace of mind.</p>
+</footer>
+
+</body>
+</html>
