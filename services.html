@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Services — River Beacon Consulting</title>
-<meta name="description" content="How we work: hourly consulting, scoped engagements, and ongoing protection for individuals and families.">
+<meta name="description" content="Our work: privacy and digital security, digital life continuity and intentional technology. Delivered hourly, as a scoped engagement or under ongoing advisory.">
 
 <!-- Favicon -->
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%231A2332'/%3E%3Ctext x='32' y='44' font-family='Georgia, serif' font-size='34' font-weight='700' text-anchor='middle' fill='%23C9A961'%3ERB%3C/text%3E%3C/svg%3E">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%2313293D'/%3E%3Ctext x='32' y='44' font-family='Georgia, serif' font-size='34' font-weight='700' text-anchor='middle' fill='%235EAAB0'%3ERB%3C/text%3E%3C/svg%3E">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,32 +20,31 @@
 
   body {
     font-family: 'Source Sans 3', sans-serif;
-    background: #F5F5F0;
+    background: #F4F5F7;
     color: #555555;
     line-height: 1.6;
     font-size: 16px;
-    zoom: 1.1;
   }
   a { color: #2E4057; text-decoration: none; }
-  a:hover { color: #C9A961; }
+  a:hover { color: #3D8189; }
 
-  /* GOLD TEXT SELECTION */
-  ::selection { background: #C9A961; color: #1A2332; }
+  /* TEXT SELECTION */
+  ::selection { background: #5EAAB0; color: #13293D; }
 
   /* FOCUS ACCESSIBILITY */
   a:focus-visible {
-    outline: 2px solid #C9A961;
+    outline: 2px solid #3D8189;
     outline-offset: 2px;
   }
 
   /* NAV */
   nav {
-    background: #1A2332;
+    background: #13293D;
     padding: 20px 0;
     position: sticky;
     top: 0;
     z-index: 100;
-    border-bottom: 2px solid #C9A961;
+    border-bottom: 2px solid #5EAAB0;
   }
   .nav-inner {
     max-width: 1100px;
@@ -64,7 +63,7 @@
     color: #FFFFFF;
     letter-spacing: 0.5px;
   }
-  .nav-brand span { color: #C9A961; }
+  .nav-brand span { color: #5EAAB0; }
   .nav-links { display: flex; gap: 32px; }
   .nav-links a {
     color: #FFFFFF;
@@ -73,40 +72,120 @@
     letter-spacing: 1.5px;
     text-transform: uppercase;
     padding-bottom: 4px;
-    background-image: linear-gradient(#C9A961, #C9A961);
+    background-image: linear-gradient(#5EAAB0, #5EAAB0);
     background-size: 0% 2px;
     background-repeat: no-repeat;
     background-position: 0 100%;
     transition: color 0.3s ease, background-size 0.3s ease;
   }
   .nav-links a:hover, .nav-links a.active {
-    color: #C9A961;
+    color: #5EAAB0;
     background-size: 100% 2px;
   }
 
   /* PAGE HERO */
-  .services-hero { background: #1A2332; padding: 72px 24px; text-align: center; }
+  .services-hero { background: #13293D; padding: 72px 24px; text-align: center; }
   .services-hero h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 36px;
+    font-size: 38px;
     font-weight: 600;
     color: #FFFFFF;
     margin-bottom: 16px;
   }
   .services-hero p {
     font-size: 14px;
-    color: #C9A961;
+    color: #5EAAB0;
     font-weight: 600;
     letter-spacing: 2px;
     text-transform: uppercase;
   }
 
-  /* SERVICE BLOCKS */
-  .services-body { max-width: 680px; margin: 0 auto; padding: 72px 24px; }
-  .services-body .intro {
+  /* OUR WORK */
+  .work-body { max-width: 1100px; margin: 0 auto; padding: 72px 24px 0; }
+  .work-intro {
+    max-width: 720px;
+    margin: 0 auto 64px;
     font-size: 18px;
     color: #555555;
     line-height: 1.7;
+    text-align: center;
+  }
+  .pillar-section { margin-bottom: 72px; }
+  .pillar-heading { text-align: center; margin-bottom: 40px; }
+  .pillar-label {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #2E4057;
+    margin-bottom: 8px;
+  }
+  .pillar-heading h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: #13293D;
+  }
+  .workstream-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+  .workstream-card {
+    background: #FFFFFF;
+    padding: 36px 28px;
+    border-radius: 6px;
+    border-top: 4px solid #5EAAB0;
+    box-shadow: 0 2px 10px rgba(26,35,50,0.06);
+    transition: transform 0.28s ease, box-shadow 0.28s ease;
+  }
+  .workstream-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(26,35,50,0.16);
+  }
+  .workstream-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 19px;
+    font-weight: 600;
+    color: #13293D;
+    margin-bottom: 16px;
+  }
+  .workstream-card p {
+    font-size: 15px;
+    color: #555555;
+    line-height: 1.7;
+  }
+  .work-closing {
+    max-width: 660px;
+    margin: 0 auto 72px;
+    text-align: center;
+    font-size: 17px;
+    color: #555555;
+    line-height: 1.8;
+  }
+
+  /* IMAGE BREAK */
+  .image-break { padding: 0 24px 72px; }
+  .image-break img {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    max-height: 600px;
+    margin: 0 auto;
+    border-radius: 6px;
+  }
+
+  /* WAYS TO WORK TOGETHER */
+  .engage-section { background: #FFFFFF; padding: 72px 24px 80px; }
+  .engage-inner { max-width: 680px; margin: 0 auto; }
+  .engage-heading { text-align: center; margin-bottom: 40px; }
+  .engage-heading h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 600;
+    color: #13293D;
+  }
+  .engage-intro {
+    font-size: 17px;
+    color: #555555;
+    line-height: 1.8;
+    text-align: center;
     margin-bottom: 56px;
   }
   .service-block { margin-bottom: 56px; }
@@ -116,14 +195,14 @@
     font-weight: 600;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: #C9A961;
+    color: #5EAAB0;
     margin-bottom: 8px;
   }
-  .service-block h2 {
+  .service-block h3 {
     font-family: 'Playfair Display', serif;
-    font-size: 28px;
+    font-size: 26px;
     font-weight: 600;
-    color: #1A2332;
+    color: #13293D;
     margin-bottom: 16px;
   }
   .service-block p {
@@ -134,7 +213,7 @@
   .service-block p + p { margin-top: 12px; }
 
   /* CTA */
-  .bridge { background: #1A2332; padding: 56px 24px; text-align: center; }
+  .bridge { background: #13293D; padding: 56px 24px; text-align: center; }
   .bridge-inner { max-width: 680px; margin: 0 auto; }
   .bridge p {
     font-family: 'Playfair Display', serif;
@@ -146,8 +225,8 @@
   }
   .hero-cta {
     display: inline-block;
-    background: #C9A961;
-    color: #1A2332;
+    background: #5EAAB0;
+    color: #13293D;
     padding: 16px 40px;
     font-size: 16px;
     font-weight: 700;
@@ -156,13 +235,13 @@
     transition: all 0.3s ease;
     text-decoration: none;
   }
-  .hero-cta:hover { background: #FFFFFF; color: #1A2332; }
+  .hero-cta:hover { background: #FFFFFF; color: #13293D; }
 
   /* FOOTER */
-  footer { background: #1A2332; padding: 40px 24px; text-align: center; }
+  footer { background: #13293D; padding: 40px 24px; text-align: center; }
   .footer-rule {
     height: 1px;
-    background: #C9A961;
+    background: #5EAAB0;
     opacity: 0.4;
     max-width: 60px;
     margin: 0 auto 20px;
@@ -174,7 +253,7 @@
     color: #FFFFFF;
     margin-bottom: 6px;
   }
-  .footer-wordmark span { color: #C9A961; }
+  .footer-wordmark span { color: #5EAAB0; }
   .footer-tagline {
     font-size: 12px;
     color: #FFFFFF;
@@ -184,14 +263,23 @@
   }
 
   /* MOBILE */
+  @media (max-width: 900px) {
+    .workstream-grid { grid-template-columns: 1fr; }
+  }
   @media (max-width: 768px) {
     .nav-links { gap: 16px; }
     .nav-links a { font-size: 11px; }
     .nav-brand { font-size: 18px; }
     .services-hero { padding: 56px 20px; }
     .services-hero h1 { font-size: 28px; }
-    .services-body { padding: 56px 20px; }
-    .services-body .intro { font-size: 17px; }
+    .work-body { padding: 56px 20px 0; }
+    .work-intro { font-size: 17px; margin-bottom: 48px; }
+    .pillar-section { margin-bottom: 56px; }
+    .work-closing { margin: 0 auto 56px; font-size: 16px; }
+    .image-break { padding: 0 20px 56px; }
+    .engage-section { padding: 56px 20px 64px; }
+    .engage-heading h2 { font-size: 26px; }
+    .service-block h3 { font-size: 22px; }
     .service-block p { font-size: 16px; }
     .service-block { margin-bottom: 48px; }
     .bridge p { font-size: 18px; }
@@ -218,35 +306,123 @@
   </div>
 </nav>
 
+<!-- HERO -->
 <section class="services-hero">
-  <h1>How We Work</h1>
-  <p>White-glove advisory, your terms</p>
+  <h1>Our Work</h1>
+  <p>White-glove advisory on your terms</p>
 </section>
 
-<section class="services-body">
-  <p class="intro">However we work together, everything is based on your situation, your family, and your goals. Regardless of what you choose, you get careful attention to detail, honest recommendations, and someone who listens before advising.</p>
+<!-- SECTION ONE: OUR WORK -->
+<section class="work-body">
+  <p class="work-intro">We have three areas of work. Below are a few examples, not a complete list.</p>
 
-  <div class="service-block">
-    <div class="service-lead">For when you are not sure where to begin. Start with a conversation.</div>
-    <h2>Hourly Consulting</h2>
-    <p>A focused session on your most pressing digital security, privacy, or technology question. Advice, education, and a clear recommendation you can act on.</p>
-    <p>Clients use these sessions to make sense of a suspicious email, talk through a concern about a device, get expert eyes on a decision before committing, or simply have someone calm their nerves and walk through a situation that feels off.</p>
+  <!-- PILLAR ONE -->
+  <div class="pillar-section">
+    <div class="pillar-heading">
+      <div class="pillar-label">Pillar One</div>
+      <h2>Privacy &amp; Digital Security</h2>
+    </div>
+    <div class="workstream-grid">
+      <div class="workstream-card">
+        <h3>Encrypted Messaging</h3>
+        <p>Do you know how to send sensitive information across the internet? Most people don't. Regular email and text messages travel in plain text that others along the way can read and keep forever. We set you up with simple, practical tools so you can send bank details, documents and family information without exposure.</p>
+      </div>
+      <div class="workstream-card">
+        <h3>Phone Number Takeover Protection</h3>
+        <p>Hackers can transfer your phone number to a device they control, then use it to defeat the security on your bank and email accounts. It's called a SIM swap, and it happens every day. We lock this door before anyone walks through it.</p>
+      </div>
+      <div class="workstream-card">
+        <h3>Password Strategy</h3>
+        <p>Your entire digital life is built on a handful of passwords, and most people have them written down or reused everywhere. Done wrong, you either expose everything or lock yourself out of your own accounts. We build you a rock solid master password, a trusted password manager and a backup plan with safety built in, so you're covered from every direction.</p>
+      </div>
+    </div>
   </div>
 
-  <div class="service-block">
-    <div class="service-lead">When you know the outcome you want, we handle it from start to finish.</div>
-    <h2>Scoped Engagement</h2>
-    <p>A complete engagement built around a defined result with a clear beginning and end. We assess your situation, design the plan, and implement it for you. Common examples include a full digital security overhaul, a complete Digital Continuity Plan, or an intentional technology reset.</p>
-    <p>Delivered white-glove, with a clear record of what was done and how it works, so you stay in control.</p>
+  <!-- PILLAR TWO -->
+  <div class="pillar-section">
+    <div class="pillar-heading">
+      <div class="pillar-label">Pillar Two</div>
+      <h2>Digital Life Continuity</h2>
+    </div>
+    <div class="workstream-grid">
+      <div class="workstream-card">
+        <h3>Digital Continuity Plan</h3>
+        <p>When the unexpected happens, your family shouldn't have to navigate a digital maze. Most people's digital lives are scattered across dozens of accounts nobody else can find. We build a complete map of where everything lives, including the things money can't replace, like family photos and journals. Everything is backed up in more than one place, so no fire or locked account can erase it.</p>
+      </div>
+      <div class="workstream-card">
+        <h3>Password Vault Handoff Setup</h3>
+        <p>Could your family get into your accounts if you couldn't help them? You don't want to hand over all your passwords now. We set up your password manager so people you trust can request access in an emergency. This includes a safe waiting period you control, so a request while you're living changes nothing. If you can't respond, access transfers on your terms. Nobody can take your passwords now, and nobody faces a locked vault later.</p>
+      </div>
+      <div class="workstream-card">
+        <h3>Bitcoin Inheritance Setup</h3>
+        <p>Holding your own Bitcoin means total personal control, but that same irrevocable ownership becomes a problem without an effective setup for inheritance or emergencies. Your wallet key works as usual while you're living and a loved one's key can activate only after a period of inactivity you define, which is re-confirmed by your regular check ins. No one can touch it early, and no lawyer or custodian is needed to hand it off.</p>
+      </div>
+    </div>
   </div>
 
-  <div class="service-block">
-    <div class="service-lead">For clients who want an ongoing advisor rather than a one-time fix.</div>
-    <h2>Ongoing Protection</h2>
-    <p>We monitor your digital exposure, keep protections current as the landscape changes, and stay available as a private channel for the questions that come up in daily life. Should you click this link? Is this email real? Is there a new risk you should know about? We help you make informed decisions without your having to become the expert.</p>
+  <!-- PILLAR THREE -->
+  <div class="pillar-section">
+    <div class="pillar-heading">
+      <div class="pillar-label">Pillar Three</div>
+      <h2>Intentional Technology</h2>
+    </div>
+    <div class="workstream-grid">
+      <div class="workstream-card">
+        <h3>The Digital Declutter</h3>
+        <p>Are there apps on your phone you never open, notifications that interrupt you a hundred times a day, accounts you forgot you had? Each one is a small tax on your attention and your security. We help you take a hard look at all of it, and you decide what stays and what goes. Then we handle the cleanup and tighten the settings on what you keep. This isn't about becoming a monk. It's about clearing the runway.</p>
+      </div>
+      <div class="workstream-card">
+        <h3>Personal AI Strategy and Implementation</h3>
+        <p>There's a lot of unfounded hype around AI. We cut all that out and get down to what it can actually do for you: taking over the rote tasks, speeding up recurring processes and freeing you to think with greater depth. We look at the real problems first, then decide whether AI is the right solution. If it is, we set it up and teach you to use it well, so the tools sharpen your judgment instead of replacing it.</p>
+      </div>
+      <div class="workstream-card">
+        <h3>Household Screen Time Setup</h3>
+        <p>If you're concerned about what screens are doing to your household, you're not alone. Once you set the direction and rules you want in place, we translate those decisions into real configurations on the phones and tablets. These are meaningful and helpful limits that hold up over time and don't erode into extra taps and workarounds. The goal isn't restriction. It's a household that is more calm, capable and happy.</p>
+      </div>
+    </div>
+  </div>
+
+  <p class="work-closing">Something on your mind that is not listed here? Tell us what is worrying you and we will address it.</p>
+</section>
+
+<!-- IMAGE BREAK -->
+<section class="image-break">
+  <img src="yubi_key.jpg" alt="">
+
+<!--- <img src="image-3.jpg" alt=""> --->
+</section>
+
+<!-- SECTION TWO: WAYS TO WORK TOGETHER -->
+<section class="engage-section">
+  <div class="engage-inner">
+    <div class="engage-heading">
+      <h2>Ways to Work Together</h2>
+    </div>
+    <p class="engage-intro">Everything above is available hourly, as a scoped engagement or under ongoing advisory. However we work together, everything is based on your situation, your family and your goals. Regardless of what you choose, you get careful attention to detail, honest recommendations and someone who listens before advising.</p>
+
+    <div class="service-block">
+      <div class="service-lead">For when you are not sure where to begin. Start with a conversation.</div>
+      <h3>Hourly Consulting</h3>
+      <p>A focused session on your most pressing digital, security, privacy or technology questions. Advice, education and a clear recommendation you can act on.</p>
+      <p>Clients use these sessions to make sense of a suspicious email, talk through a concern about a device, get expert eyes on a decision before committing, or simply have someone calm their nerves and walk through a situation that feels off.</p>
+    </div>
+
+    <div class="service-block">
+      <div class="service-lead">When you know the outcome you want, we handle it from start to finish.</div>
+      <h3>Scoped Engagement</h3>
+      <p>Any of the services above can be delivered this way, or a combination built around your situation. We assess, design the plan and implement it for you. Delivered white-glove, with a clear record of what was done and how it works, so you stay in control.</p>
+    </div>
+
+    <div class="service-block">
+      <div class="service-lead">For clients who want an ongoing advisor rather than a one-time fix.</div>
+      <h3>Ongoing Advisory</h3>
+      <p>We monitor your digital exposure with periodic sweeps that keep your personal information off people-search sites, review new risks as they emerge and stay available as a private channel for the questions that come up in daily life. Should you click this link? Is this email real? Is there a new risk you should know about? We help you make informed decisions without your having to become the expert.</p>
+      <p>The attention scales to the size and complexity of your digital life, so what you get matches what you have to protect.</p>
+    </div>
   </div>
 </section>
 
+<!-- CTA -->
 <section class="bridge">
   <div class="bridge-inner">
     <p>Ready to take control?</p>

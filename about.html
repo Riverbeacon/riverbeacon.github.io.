@@ -4,10 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>About — River Beacon Consulting</title>
-<meta name="description" content="Why River Beacon exists: a data analyst's journey from seeing how personal data is collected to helping individuals and families take control of their digital lives.">
+
+<meta name="description" content="Why River Beacon exists: technologists who spent their careers inside the systems that collect and sell personal data, now helping people take ownership of their digital lives, past, present and future.">
 
 <!-- Favicon -->
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%231A2332'/%3E%3Ctext x='32' y='44' font-family='Georgia, serif' font-size='34' font-weight='700' text-anchor='middle' fill='%23C9A961'%3ERB%3C/text%3E%3C/svg%3E">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%2313293D'/%3E%3Ctext x='32' y='44' font-family='Georgia, serif' font-size='34' font-weight='700' text-anchor='middle' fill='%235EAAB0'%3ERB%3C/text%3E%3C/svg%3E">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,32 +21,31 @@
 
   body {
     font-family: 'Source Sans 3', sans-serif;
-    background: #F5F5F0;
+    background: #F4F5F7;
     color: #555555;
     line-height: 1.6;
     font-size: 16px;
-    zoom: 1.1;
   }
   a { color: #2E4057; text-decoration: none; }
-  a:hover { color: #C9A961; }
+  a:hover { color: #3D8189; }
 
-  /* GOLD TEXT SELECTION */
-  ::selection { background: #C9A961; color: #1A2332; }
+  /* TEXT SELECTION */
+  ::selection { background: #5EAAB0; color: #13293D; }
 
   /* FOCUS ACCESSIBILITY */
   a:focus-visible {
-    outline: 2px solid #C9A961;
+    outline: 2px solid #3D8189;
     outline-offset: 2px;
   }
 
   /* NAV */
   nav {
-    background: #1A2332;
+    background: #13293D;
     padding: 20px 0;
     position: sticky;
     top: 0;
     z-index: 100;
-    border-bottom: 2px solid #C9A961;
+    border-bottom: 2px solid #5EAAB0;
   }
   .nav-inner {
     max-width: 1100px;
@@ -64,7 +64,7 @@
     color: #FFFFFF;
     letter-spacing: 0.5px;
   }
-  .nav-brand span { color: #C9A961; }
+  .nav-brand span { color: #5EAAB0; }
   .nav-links { display: flex; gap: 32px; }
   .nav-links a {
     color: #FFFFFF;
@@ -73,19 +73,19 @@
     letter-spacing: 1.5px;
     text-transform: uppercase;
     padding-bottom: 4px;
-    background-image: linear-gradient(#C9A961, #C9A961);
+    background-image: linear-gradient(#5EAAB0, #5EAAB0);
     background-size: 0% 2px;
     background-repeat: no-repeat;
     background-position: 0 100%;
     transition: color 0.3s ease, background-size 0.3s ease;
   }
   .nav-links a:hover, .nav-links a.active {
-    color: #C9A961;
+    color: #5EAAB0;
     background-size: 100% 2px;
   }
 
   /* ABOUT INTRO - DARK SECTION */
-  .about-intro { background: #1A2332; padding: 80px 24px; }
+  .about-intro { background: #13293D; padding: 80px 24px; }
   .about-intro-inner { max-width: 680px; margin: 0 auto; }
   .about-intro h1 {
     font-family: 'Playfair Display', serif;
@@ -100,7 +100,7 @@
     font-weight: 600;
     letter-spacing: 2.5px;
     text-transform: uppercase;
-    color: #C9A961;
+    color: #5EAAB0;
     margin-bottom: 12px;
     margin-top: 48px;
   }
@@ -112,24 +112,40 @@
     margin-bottom: 36px;
   }
 
-  /* PHILOSOPHY */
-  .about-philosophy { padding: 72px 24px; max-width: 680px; margin: 0 auto; }
-  .about-philosophy h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 28px;
-    font-weight: 600;
-    color: #1A2332;
-    margin-bottom: 32px;
+  /* IN-FLOW IMAGE BREAK */
+  .break-img {
+    max-width: 680px;
+    margin: 48px auto 36px;
   }
-  .about-philosophy p {
+  .break-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+  }
+
+  /* ABOUT BODY + PHILOSOPHY - MERGED LIGHT SECTION */
+  .about-body { padding: 72px 24px; max-width: 680px; margin: 0 auto; }
+  .about-body .story-label {
+    color: #3D8189;
+  }
+  .about-body p {
     font-size: 17px;
     color: #555555;
     line-height: 1.9;
     margin-bottom: 28px;
   }
+  .about-body h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: #13293D;
+    margin-bottom: 32px;
+    margin-top: 40px;
+  }
 
   /* BRIDGE / CTA */
-  .bridge { background: #1A2332; padding: 56px 24px; text-align: center; }
+  .bridge { background: #13293D; padding: 56px 24px; text-align: center; }
   .bridge-inner { max-width: 680px; margin: 0 auto; }
   .bridge p {
     font-family: 'Playfair Display', serif;
@@ -141,8 +157,8 @@
   }
   .hero-cta {
     display: inline-block;
-    background: #C9A961;
-    color: #1A2332;
+    background: #5EAAB0;
+    color: #13293D;
     padding: 16px 40px;
     font-size: 16px;
     font-weight: 700;
@@ -151,13 +167,13 @@
     transition: all 0.3s ease;
     text-decoration: none;
   }
-  .hero-cta:hover { background: #FFFFFF; color: #1A2332; }
+  .hero-cta:hover { background: #FFFFFF; color: #13293D; }
 
   /* FOOTER */
-  footer { background: #1A2332; padding: 40px 24px; text-align: center; }
+  footer { background: #13293D; padding: 40px 24px; text-align: center; }
   .footer-rule {
     height: 1px;
-    background: #C9A961;
+    background: #5EAAB0;
     opacity: 0.4;
     max-width: 60px;
     margin: 0 auto 20px;
@@ -169,7 +185,7 @@
     color: #FFFFFF;
     margin-bottom: 6px;
   }
-  .footer-wordmark span { color: #C9A961; }
+  .footer-wordmark span { color: #5EAAB0; }
   .footer-tagline {
     font-size: 12px;
     color: #FFFFFF;
@@ -187,10 +203,12 @@
     .about-intro h1 { font-size: 28px; }
     .about-intro p { font-size: 16px; line-height: 1.9; margin-bottom: 28px; }
     .story-label { margin-top: 36px; margin-bottom: 10px; }
-    .about-philosophy { padding: 56px 20px; }
-    .about-philosophy p { font-size: 16px; }
+    .about-body { padding: 56px 20px; }
+    .about-body p { font-size: 16px; }
+    .about-body h2 { font-size: 24px; }
     .bridge p { font-size: 18px; }
     .bridge { padding: 48px 20px; }
+    .break-img { margin: 36px auto 28px; }
   }
   @media (max-width: 480px) {
     .nav-inner { flex-direction: column; }
@@ -216,26 +234,33 @@
 <section class="about-intro">
   <div class="about-intro-inner">
     <h1>Why We Exist</h1>
+    <p>River Beacon Consulting was founded by technologists who spent their careers inside the systems that collect and sell personal data. We saw how the data economy really works, and how little control people have within it. In our work, we handled datasets that held the real and intimate details of people's lives. Prescriptions, divorces and residence history sat in plain view for anyone with access. It was all legal, and it was all exposing. We watched organizations gather all kinds of data about their customers, but those customers had no way to opt out or take it back. Even organizations acting in good faith got breached, and there was no recourse for the users.</p>
 
-    <div class="story-label">The Realization</div>
-    <p>I spent years working in data analytics. One day, as I was reviewing patient datasets for a healthcare client, I realized how many real and intimate details of people's lives were stored in our databases. Prescriptions, divorces, and medical conditions were visible to anyone with access. This was all legal, but very exposing. This shifted my perspective. I began to see how organizations collected all kinds of data, but individuals frequently had no opt-out or control. Even those who collected data with good intentions often got hacked, and the victims could do nothing to prevent or fix it.</p>
+    <div class="story-label">What We See</div>
+    <p>This reality of the modern data landscape causes many people to feel exposed and raises questions about their own data. Who is collecting it? What are they doing with it? Who is really in control? Clients come to us with all kinds of issues that stem from this widespread data collection. They are bothered by ads appearing for things that were discussed in private but never searched for. They are exhausted by spam calls from strangers who address them by name, or mail that arrives with details about the household that were never publicly shared. Each of these annoyances generates the same feeling: "I wish they didn't have my data."</p>
 
-    <div class="story-label">Loss of Control</div>
-    <p>This led to deeper questions about my own data. Who was collecting it? What were they using it for? When a cloud service provider locked me out of my account unexpectedly, I felt violated. I'd given them my data, and they controlled every part of it, including my access. I never wanted to feel that loss of control again.</p>
+    <p>Other clients come with stories, not of privacy violations, but of lack of control. These incidents include getting locked out of their own accounts by a cloud provider without warning. It's a feeling of violation. They had handed over their data willingly, yet another party controlled every part of it, including their very access. No one should have to feel that loss of control.</p>
 
-    <div class="story-label">Learning the Hard Way</div>
-    <p>So I tried DIY workarounds instead, but I made many rookie mistakes. I almost locked myself out of my own encrypted vault. This was one of the most stressful moments of my life. Fortunately, I found technical guides, mentors, and communities that helped me find practical ways to get control of my data and apps.</p>
+    <p>Many are understandably frustrated by these situations, and they decide to take back control themselves. Unfortunately, the digital landscape is often very complicated, and the layperson sometimes makes painful mistakes. Our clients have sought help after nearly locking themselves out of their own encrypted vaults, losing the only copy of an important recovery key, or dropping a phone in the lake and realizing the backup was never really in place. The stakes are high. Our digital lives hold what matters to us, and the stress of a poorly managed one can be enormous.</p>
 
-    <div class="story-label">The Awakening</div>
-    <p>As I gained more control and became more intentional with my data and the apps I was using, I became more aware of a problem affecting many around me. Their screens constantly commanded their attention. Tools meant to help them be focused and productive were having the opposite effect. I saw coworkers and friends become unproductive and unhappy with the very technology that should have helped them. This inspired me to draw on my own reading, writing, and experience and start teaching groups about a more intentional approach. This began my journey of building solutions to ensure technology serves the user, not the other way around.</p>
+    <div class="story-label">Looking Beyond Yourself</div>
+    <p>There is one more layer to all of this, and it is perhaps the most meaningful one. While security and privacy provide the foundation for someone to get their digital life in order, a bigger question remains. What happens to loved ones when a person is gone? Accounts, journals, important notes, photographs and personal projects live behind passwords that are too often held by just one person. If that person is incapacitated or no longer in the picture, families can be locked out of what matters most at the worst possible moment. We believe no one should ever face that.</p>
+
+    <p>Ultimately, River Beacon exists to give people ownership over the past, present and future of their digital lives.</p>
   </div>
 </section>
 
-<section class="about-philosophy">
-  <h2>Our Philosophy</h2>
-  <p>We approach your journey toward controlling your data and technology with a practical and proactive attitude. We've done the research and testing so you don't have to. Methods that don't work get discarded and those that do work get refined. We focus on your goals and bring them to life without burdening you with the technical work.</p>
-  <p>Decisions on this topic are personal. Each person balances convenience, control, focus and fun differently. Whatever setup you want as a user, we help you achieve it. Our role is to give you the tools to make informed choices and bring your vision of an ideal digital life to fruition.</p>
-  <p>That's why we're here.</p>
+<section class="about-body">
+  <div class="about-body-inner">
+    <!-- Image before Philosophy heading -->
+    <figure class="break-img">
+      <img src="break_image.png" alt="Serene river at dusk with a soft guiding light across calm water" loading="lazy">
+    </figure>
+
+    <h2>Our Philosophy</h2>
+    <p>We approach your journey toward controlling your data and technology with a practical and proactive attitude. We've done the research and testing so you don't have to. Methods that don't work get discarded and those that do work get refined. We focus on your goals and bring them to life without burdening you with the technical work.</p>
+    <p>Decisions on this topic are personal. Each person balances convenience, control and focus differently. Whatever setup you want as a user, we help you achieve it. Our role is to give you the tools to make informed choices and bring your vision of an ideal digital life to fruition.</p>
+  </div>
 </section>
 
 <section class="bridge">
